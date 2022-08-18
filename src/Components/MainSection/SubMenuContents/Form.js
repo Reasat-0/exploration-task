@@ -77,7 +77,7 @@ const Form = () => {
         if( Object.keys(formErrors).length === 0 && isSubmit ){
             allUsers.push(formData)
             localStorage.setItem('userList', JSON.stringify(allUsers));
-
+            setFormData(initFormData)
             handleSaveToPC(allUsers, 'users-info');
         }
     },[formErrors])

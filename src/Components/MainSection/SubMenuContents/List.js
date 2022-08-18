@@ -10,8 +10,10 @@ const List = () => {
     const [loading,setLoading] = useState(false)
 
     const url = "https://randomuser.me/"
+    
     useEffect(()=>{
         fetchUsers();
+
     },[])
 
 
