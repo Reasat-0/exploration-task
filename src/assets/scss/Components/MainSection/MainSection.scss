@@ -1,0 +1,27 @@
+.main-section{
+    .MuiBox-root{
+        height:unset;
+    }
+    .custom-tabpanel{
+        width: 100%;
+    }
+    .mainmenu-box{
+        display: flex;
+        .MuiTabs-root.MuiTabs-vertical{
+            flex: 0 0 130px;
+        }
+        .custom-tabpanel{
+            flex : 0 0 calc(100% - 130px)
+        }
+    }
+    .submenu-box{
+        .custom-tabpanel{
+            padding: 20px 30px;
+        }
+    }
+}
+
+
+@import 'SubMenuContents/Counter.scss';
+@import 'SubMenuContents/Form.scss';
+@import 'SubMenuContents/List.scss';

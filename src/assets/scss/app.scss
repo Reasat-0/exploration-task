@@ -1,0 +1,35 @@
+@import 'utils/mixin.scss';
+@import 'utils/variables.scss';
+
+
+@import 'Components/TopBar.scss';
+@import 'Components/MainSection/MainSection.scss';
+@import 'Components/Footer.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.App{
+    min-height: 100vh;
+    display: flex;
+    padding:30px 0;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background: linear-gradient(to right, #7dd3fc,#c4b5fd);
+    .custom-container{
+        // box-shadow: 1px 1px 6px 6px #ebebeb;
+        padding: 0;
+        .error-msg{
+            color :red;
+            margin: 0;
+            text-align: left;
+            font-size : 12px;
+            font-weight: 500;
+        }
+    
+    }
+}
