@@ -19,9 +19,10 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    background: linear-gradient(to right, #7dd3fc,#c4b5fd);
+    // background: linear-gradient(to right, #7dd3fc,#c4b5fd);
     .custom-container{
         // box-shadow: 1px 1px 6px 6px #ebebeb;
+        box-shadow: 5px 1px 16px 6px #dfdddd;
         padding: 0;
         .error-msg{
             color :red;

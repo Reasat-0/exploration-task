@@ -20,4 +20,38 @@
             }
         }
     }
+    .search-box{
+        max-width: 280px;
+        box-shadow: 5px 1px 16px 6px #dfdddd;
+        position: relative;
+        padding: 4px;
+        border-radius: 40px;
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 5px 0px 35px auto;
+        .search-icon-holder{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .search-input{
+            width: 100%;
+            padding-left: 8px;
+            padding-top: 5px;
+            padding-bottom: 4px;
+
+            margin: 0;
+            border: none;
+            &::placeholder{
+                color : gray;
+                letter-spacing: 0.6px;
+                font-size: 12px;
+            }
+            &:focus-visible{
+                outline: 0px;
+            }
+        }
+    }
 }

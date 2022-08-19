@@ -8,7 +8,7 @@ const ItemRow = ({rows}) => {
 
     return (
       <tr>
-        <td> {name.title + name.first + name.last}</td>
+        <td> {`${ name.title } ${ name.first } ${ name.last } `}</td>
         <td>{email}</td>
         <td>{gender.toUpperCase()}</td>
         <td>{cell}</td>
