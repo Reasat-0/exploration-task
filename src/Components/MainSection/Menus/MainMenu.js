@@ -65,7 +65,7 @@ export default function MainMenu() {
         {/* <Tab label="Angular JS" {...a11yProps(0)} /> */}
 
       </Tabs>
-      <TabPanel class="custom-tabpanel" value={value} index={0}>
+      <TabPanel className="custom-tabpanel" value={value} index={0}>
         <SubMenu/>
       </TabPanel>
     </Box>

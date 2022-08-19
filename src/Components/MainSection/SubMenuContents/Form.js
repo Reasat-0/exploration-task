@@ -48,12 +48,19 @@ const Form = () => {
     const validate = (data) => {
         const error = {};
         const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+        const isAvailable = allUsers.filter( (item) => item.email === data.email).length
+        
         if(!data.name){
             error.name = "Name is required!"
         }
         if(!data.email){
             error.email = "Email is required!"
         }
+        else if(isAvailable){
+            error.email = "This email is already taken. Try something else!! "
+        }
+        
         if(!data.gender){
             error.gender = "Select your Gender!"
         }

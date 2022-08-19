@@ -71,13 +71,13 @@ export default function VerticalTabs() {
         <Tab label="List" {...a11yProps(2)} />
 
       </Tabs>
-      <TabPanel class="custom-tabpanel" value={value} index={0}>
+      <TabPanel className="custom-tabpanel" value={value} index={0}>
         <Counter/>
       </TabPanel>
-      <TabPanel class="custom-tabpanel" value={value} index={1}>
+      <TabPanel className="custom-tabpanel" value={value} index={1}>
         <Form/>
       </TabPanel>
-      <TabPanel class="custom-tabpanel" value={value} index={2}>
+      <TabPanel className="custom-tabpanel" value={value} index={2}>
         <List/>
       </TabPanel>
     </Box>

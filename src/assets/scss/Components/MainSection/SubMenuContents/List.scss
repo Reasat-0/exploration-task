@@ -1,0 +1,23 @@
+.list-container{
+    .pagination-container{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        .pagination-link{
+            padding: 6px 14px;
+            cursor: pointer;
+            color: rgb(7, 106, 151);
+            font-weight: 700;
+            text-decoration: none;
+            // border: 2px solid rgb(7, 106, 151);
+            &.pagination-active{
+                border: 2px solid rgb(7, 106, 151);
+                color: rgba(15, 153, 218, 0.692);
+                border-radius: 5px;
+                background: #fff;
+            }
+        }
+    }
+}
